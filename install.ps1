@@ -14,8 +14,8 @@ $username = $env:USERNAME
 $server_directory = "C:\Users\$username\server"
 $eula = "eula=true"
 
-Copy-Item -Path start.ps1 -Destination "C:\Users\$username"
-Copy-Item -Path uninstall.ps1 -Destination "C:\Users\$username"
+Copy-Item -Path .\start.ps1 -Destination "C:\Users\$username"
+Copy-Item -Path .\uninstall.ps1 -Destination "C:\Users\$username"
 
 # Check if Java is installed
 function check_java {
@@ -33,7 +33,7 @@ function check_java {
 check_java
 
 function transfer_config_files {
-    $global:username = = $env:USERNAME
+    $global:username = $env:USERNAME
     Copy-Item -Path C:\Users\$username\start.ps1 -Destination $server_directory
     Remove-Item -Path C:\Users\$username\start.ps1
     Copy-Item -Path C:\Users\$username\uninstall.ps1 -Destination $server_directory

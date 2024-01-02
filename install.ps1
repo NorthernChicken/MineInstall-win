@@ -10,12 +10,8 @@ $server_version = "1.20.4"
 $server_link = "https://piston-data.mojang.com/v1/objects/8dd1a28015f51b1803213892b50b7b4fc76e594d/server.jar"
 
 $java_installed = $false
-$username = $env:USERNAME
 $server_directory = "C:\Users\$username\server"
 $eula = "eula=true"
-
-Copy-Item -Path .\start.ps1 -Destination "C:\Users\$username"
-Copy-Item -Path .\uninstall.ps1 -Destination "C:\Users\$username"
 
 # Check if Java is installed
 function check_java {

@@ -19,3 +19,9 @@ Original repo: https://github.com/NorthernChicken/MineInstall
 # Uninstall
 Navigate to your server directory: ```cd C:\Users\<YOUR USERNAME>\server```
 Run the uninstall script: ```.\uninstall.ps1``` WARNING: THIS WILL DELETE YOUR SERVER, ITS WORLD, AND ALL PLAYER DATA. RUN AT YOUR OWN RISK.
+
+# Troubleshooting
+If you ever get an error related to "execution policy," you may need to change this setting:
+1. Open PowerShell (start menu -> search "PowerShell" and run as administrator)
+2. Run: ```Set-ExecutionPolicy Unrestricted -Scope CurrentUser```
+*Note that this will allow for the execution of any script on your computer. If you want to turn this off later, run: ```Set-ExecutionPolicy Restricted -Scope CurrentUser```.

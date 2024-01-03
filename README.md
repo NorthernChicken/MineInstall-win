@@ -9,7 +9,7 @@ Original repo: https://github.com/NorthernChicken/MineInstall
 * Windows Terminal is recommended, but not required: https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare
 
 # Download and Install
-1. Open command prompt (start menu -> type "cmd" and hit enter)
+1. Open powershell as administrator (start menu -> type "powershell" and run as administrator)
 2. Download this repository with git: ```git clone https://github.com/NorthernChicken/MineInstall-win```
 3. Change to the directory: ```cd MineInstall-win```
 4. Run the batchfile: ```run.bat```

@@ -3,7 +3,7 @@
 #Shows amount of installed memory
 $freeMemory = (Get-Counter '\Memory\Available MBytes').CounterSamples.CookedValue
 Write-Host "You have $freeMemory MB of RAM available."
-$userAllocated = Read-Host "How much would you like to allocate to the server? "
+$userAllocated = Read-Host "How much would you like to allocate to the server? (In Megabytes) "
 $userAllocated += "M"
 
 Start-Process -FilePath "java" -ArgumentList ("-Xmx$userAllocated", "-Xms$userAllocated", "-jar", "server.jar", "nogui") -NoNewWindow -Wait

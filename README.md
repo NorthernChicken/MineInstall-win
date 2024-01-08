@@ -17,7 +17,7 @@ Original repo: https://github.com/NorthernChicken/MineInstall
 6. You can start the server by running ```.\start.ps1```. Enter how much memory you would like to allocate to the server in Megabytes.
 
 # Uninstall
-Navigate to your server directory: ```cd C:\Users\<YOUR USERNAME>\server```
+Navigate to your server directory: ```cd ~\server```
 Run the uninstall script: ```.\uninstall.ps1``` WARNING: THIS WILL DELETE YOUR SERVER, ITS WORLD, AND ALL PLAYER DATA. RUN AT YOUR OWN RISK.
 
 # Troubleshooting

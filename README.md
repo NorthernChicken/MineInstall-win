@@ -13,7 +13,7 @@ Original repo: https://github.com/NorthernChicken/MineInstall
 2. Download this repository with git: ```git clone https://github.com/NorthernChicken/MineInstall-win```
 3. Change to the directory: ```cd MineInstall-win```
 4. Run the batchfile: ```.\run.bat```
-5. Once the script is finished, navigate to the server directory: ```cd C:\Users\<YOUR USERNAME>\server```
+5. Once the script is finished, navigate to the server directory: ```cd ~\server```
 6. You can start the server by running ```.\start.ps1```. Enter how much memory you would like to allocate to the server in Megabytes.
 
 # Uninstall

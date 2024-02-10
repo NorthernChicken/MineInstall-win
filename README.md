@@ -25,3 +25,6 @@ If you ever get an error related to "execution policy," you may need to change t
 1. Open PowerShell (start menu -> search "PowerShell" and run as administrator)
 2. Run: ```Set-ExecutionPolicy Unrestricted -Scope CurrentUser```
 *Note that this will allow for the execution of any script on your computer. If you want to turn this off later, run: ```Set-ExecutionPolicy Restricted -Scope CurrentUser```.
+
+# Known Issues
+1. The script automates accepting the Eula, but server.jar doesn't recognize this on Windows except if the Eula is accepted manually. Trying to find a workaround.

@@ -26,5 +26,8 @@ If you ever get an error related to "execution policy," you may need to change t
 2. Run: ```Set-ExecutionPolicy Unrestricted -Scope CurrentUser```
 *Note that this will allow for the execution of any script on your computer. If you want to turn this off later, run: ```Set-ExecutionPolicy Restricted -Scope CurrentUser```.
 
+# Changing Minecraft version
+This script automatically installs the latest version of Minecraft (1.20.4). If you want to use a different version or use a modded server (paper, spigot, etc.) you have to change the "$server_link" variable to the URL of the server.jar download.
+
 # Known Issues
 1. The script automates accepting the Eula, but server.jar doesn't recognize this on Windows except if the Eula is accepted manually. Trying to find a workaround.

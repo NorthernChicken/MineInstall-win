@@ -33,3 +33,4 @@ This script automatically installs the latest version of Minecraft. If you want 
 
 # Known Issues
 1. The script automates accepting the Eula, but server.jar doesn't recognize this on Windows except if the Eula is accepted manually. Trying to find a workaround.
+2. Uninstall script may throw an error saying that the directory is in use.

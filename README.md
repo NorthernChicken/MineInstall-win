@@ -6,7 +6,7 @@ Note that using Linux is recommended for Minecraft servers, and this script may 
 
 # Requirements
 * Requires git: https://git-scm.com/download/win
-* Requires Java 17 or higher: https://www.oracle.com/java/technologies/downloads/#jdk17-windows
+* Requires Java 21 or higher: https://www.oracle.com/java/technologies/downloads/#java21
 * Requires PowerShell (pre-installed with Windows)
 * Windows Terminal is recommended, but not required: https://www.microsoft.com/store/productId/9N0DX20HK701?ocid=pdpshare
 

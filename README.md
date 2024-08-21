@@ -2,6 +2,8 @@
 This is a Windows port, re-written from the ground up, of a previous project of mine that installs a Minecraft server using Bash. Because not everyone uses Linux, I have created a Windows version.
 Original repo: https://github.com/NorthernChicken/MineInstall
 
+Note that using Linux is recommended for Minecraft servers, and this script may lack features or updates that the original has.
+
 # Requirements
 * Requires git: https://git-scm.com/download/win
 * Requires Java 17 or higher: https://www.oracle.com/java/technologies/downloads/#jdk17-windows

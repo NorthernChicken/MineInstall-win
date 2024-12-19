@@ -6,8 +6,8 @@
 # Repo: https://github.com/NorthernChicken/MineInstall-win
 # -------------------------------
 
-$server_version = "1.21.1"
-$server_link = "https://piston-data.mojang.com/v1/objects/59353fb40c36d304f2035d51e7d6e6baa98dc05c/server.jar"
+$server_version = "1.21.4"
+$server_link = "https://piston-data.mojang.com/v1/objects/4707d00eb834b446575d89a61a11b5d548d8c001/server.jar"
 
 $java_installed = $false
 $username = $env:USERNAME

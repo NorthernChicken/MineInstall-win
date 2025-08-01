@@ -14,22 +14,25 @@ $username = $env:USERNAME
 $server_directory = "C:\Users\$username\server"
 $eula = "eula=true"
 
+
 # Check if Java is installed
 function check_java {
-    $global:java_installed = $false
     Write-Host "Checking Java..."
     $javaPath = Get-Command java -ErrorAction SilentlyContinue
 
     if ($javaPath) {
-        $global:java_installed = $true
+        $script:java_installed = $true
         Write-Host "Java is installed. Java path: $($javaPath.Source)"
     } else {
+        $script:java_installed = $false
         Write-Host "Java is not installed."
     }
 }
 check_java
 
 function transfer_config_files {
+    # We copy the start and uninstall files to the user's home directory in the batchfile then move them here
+    # This is to prevent problems if the user renames this dir
     $global:username = $env:USERNAME
     Copy-Item -Path C:\Users\$username\start.ps1 -Destination $server_directory
     Remove-Item -Path C:\Users\$username\start.ps1
@@ -79,7 +82,7 @@ function server_setup {
     Write-Host "Running server.jar..."
     Start-Process -FilePath "java" -ArgumentList ("-Xmx1024M", "-Xms1024M", "-jar", "server.jar", "nogui") -NoNewWindow -Wait
     Write-Host "Accepting EULA..."
-    Out-File -FilePath "$server_directory\eula.txt" -InputObject $eula
+    Out-File -FilePath "$server_directory\eula.txt" -InputObject $eula -Encoding ascii
     Write-Host "Creating server..."
 }
 if ($java_installed) {

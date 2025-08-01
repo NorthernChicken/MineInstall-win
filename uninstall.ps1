@@ -20,6 +20,7 @@ while ($isTrue -eq $false) {
 }
 
 if ($isTrue -eq $true) {
+    Set-Location -Path "C:\Users\$username"
     Remove-Item -Recurse -Force $server_directory
 }
 else {
